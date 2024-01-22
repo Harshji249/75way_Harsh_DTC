@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "87759786-85c1-4579-9224-2592431a8b43",
+		"name": "75Way_Harsh_DTC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28568389"
+	},
+	"item": [
+		{
+			"name": "createTeacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Vivek Sharma",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "vivek1234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Harsh1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/createuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "vivek1234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Harsh1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhZTdkNzY1ZGQ5ZTJjNWUxNzVhZTMwIn0sImlhdCI6MTcwNTkzNDI2OX0.RagHh8_S21bSZxWfjcyf6F_aSEYo1culvj2fz4uvSbM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Dev Sharma",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "dev1234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Dev1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/createuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhZTdkNzY1ZGQ5ZTJjNWUxNzVhZTMwIn0sImlhdCI6MTcwNTkzNDI2OX0.RagHh8_S21bSZxWfjcyf6F_aSEYo1culvj2fz4uvSbM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "65ae7f1790bec8e144d133b4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/markattendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"markattendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhZTdkNzY1ZGQ5ZTJjNWUxNzVhZTMwIn0sImlhdCI6MTcwNTkzNDI2OX0.RagHh8_S21bSZxWfjcyf6F_aSEYo1culvj2fz4uvSbM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Test Parent ",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test1234",
+							"type": "text"
+						},
+						{
+							"key": "child_email",
+							"value": "dev1234@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teacher/createparent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teacher",
+						"createparent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/parent/gethw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"parent",
+						"gethw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhZTdkNzY1ZGQ5ZTJjNWUxNzVhZTMwIn0sImlhdCI6MTcwNTkzNDI2OX0.RagHh8_S21bSZxWfjcyf6F_aSEYo1culvj2fz4uvSbM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "65ae7f1790bec8e144d133b4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/parent/lefthome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"parent",
+						"lefthome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/child/gethw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"child",
+						"gethw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
